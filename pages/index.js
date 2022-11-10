@@ -6,15 +6,7 @@ import Seo from "../components/Seo";
 export default function Home({ results }) {
   const router = useRouter();
   const onClick = (id, title) => {
-    router.push(
-      {
-        pathname: `/movies/${id}`,
-        query: {
-          title,
-        },
-      },
-      `/movies/${id}`
-    );
+    router.push(`/movies/${title}/${id}`);
   };
   return (
     <div className="container">
@@ -30,12 +22,8 @@ export default function Home({ results }) {
             <Link
               legacyBehavior
               href={{
-                pathname: `/movies/${movie.id}`,
-                query: {
-                  title: movie.original_title,
-                },
+                pathname: `/movies/${movie.original_title}/${movie.id}`,
               }}
-              as={`/movies/${movie.id}`}
             >
               <a>{movie.original_title}</a>
             </Link>
