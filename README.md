@@ -3,11 +3,6 @@
 노마드코더의 [NextJS 시작하기](https://nomadcoders.co/nextjs-fundamentals/) 강의를 들으며 공부합니다 🫡
 
 ---
-# 📚 NextJS Study
-
-노마드코더의 [NextJS 시작하기](https://nomadcoders.co/nextjs-fundamentals/) 강의를 들으며 공부합니다 🫡
-
----
 
 ## 프레임워크(framework) vs 라이브러리(library)
 이 둘의 큰 차이는 <span style="color:red">통제의 역전(Inversion of Control)</span> 이다. <br>
